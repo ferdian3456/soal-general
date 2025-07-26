@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - 5436:5432
+    environment:
+      - POSTGRES_USER=andhika
+      - POSTGRES_PASSWORD=andhika123
+      - POSTGRES_DB=mymarket
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+#    healthcheck:
+#      test: [ "CMD", "pg_isready", "-U", "ferdian" ]
+#      interval: 5s
+#      timeout: 5s
+#      retries: 5
+
+volumes:
+  postgres_data:
