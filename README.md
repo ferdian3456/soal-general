@@ -1,5 +1,8 @@
 # Soal Interview: API & SQL
 
+## Jawaban
+2.  *select distinct c.id, c.name,o.id,o.order_date,o.total,oi.qty FROM customers as c full outer JOIN orders as o ON o.customer_id = c.id left join order_items as oi on o.id=oi.order_id order by c.id;*
+
 ## 1. Membuat API Add Data & Get Data List (In-Memory, Tanpa Database)
 
 **Deskripsi:**
